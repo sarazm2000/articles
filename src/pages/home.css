@@ -38,12 +38,15 @@ a {
 
 .article-title {
   cursor: pointer;
+  text-align: justify;
 }
 .body {
   max-height: 6rem;
   overflow: hidden;
   margin: 1rem;
   cursor: pointer;
+  text-align: justify;
+  padding: 0 3rem;
 }
 
 .date {
@@ -78,4 +81,34 @@ a {
 .read-this:hover {
   background-color: white;
   color: rgb(36, 169, 125);
+}
+
+.tag-container {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: fit-content;
+}
+
+.tag-name {
+  background-color: rgba(128, 128, 128, 0.342);
+  margin: 0.23rem;
+  display: inline-grid;
+  padding: 0.7rem;
+  border-radius: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    max-height: 6rem;
+    overflow: hidden;
+    margin: 1rem;
+    cursor: pointer;
+    text-align: justify;
+    padding: 0 0rem;
+  }
+
+  .article-title {
+    cursor: pointer;
+    margin-top: 2rem;
+  }
 }

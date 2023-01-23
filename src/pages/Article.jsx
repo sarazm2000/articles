@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useRecoilValue, useRecoilState } from "recoil";
 import Navbar from "../components/Navbar";
 import { slugState } from "./Home";
@@ -74,7 +74,7 @@ const Article = () => {
             </div>
           </div>
 
-          <div className="article-body">
+          <div className="article-content">
             {article.body.replaceAll("\\n", "\n")}
           </div>
           <div className="article-tag-container">
@@ -97,7 +97,7 @@ const Article = () => {
                 onChange={(e) => setValue(e.target.value)}
                 name="comment"
                 id="comment"
-                cols="70"
+                cols="40"
                 rows="4"
               ></textarea>
               <div onClick={createComment} className="comment-button">

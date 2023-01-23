@@ -6,11 +6,10 @@ import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 import "./app.css";
 import Article from "./pages/Article";
-import { slugState } from "./pages/Home";
 import { useRecoilValue } from "recoil";
 
 function App() {
-  // const slug = useRecoilValue(slugState);
+  const token = localStorage.getItem("token");
   return (
     <RecoilRoot>
       <div className="app">
