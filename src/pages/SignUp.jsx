@@ -14,7 +14,6 @@ const SignUp = () => {
     });
   };
   const handleSubmit = (e) => {
-    console.log(data.Email);
     e.preventDefault();
     axios
       .post(`https://api.realworld.io/api/users`, {
@@ -25,8 +24,7 @@ const SignUp = () => {
         },
       })
       .then(function (res) {
-        console.log(res.data.user.token);
-        const { token } = res.data.user.token;
+        const token = res.data.user.token;
         localStorage.setItem("token", token);
       })
       .catch(function (error) {

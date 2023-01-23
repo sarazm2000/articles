@@ -27,7 +27,8 @@ const SignIn = () => {
       })
       .then(function (res) {
         console.log(res.data.user.token);
-        localStorage.setItem("token", res.data.user.token);
+        const token = res.data.user.token;
+        localStorage.setItem("token", token);
       })
       .catch(function (error) {
         console.log(error);
