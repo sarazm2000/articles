@@ -1,0 +1,14 @@
+.navbar {
+  text-align: end;
+  background-color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-item {
+  display: inline-block;
+  color: rgb(73, 73, 73);
+}
+
+span {
+  padding: 0.4rem;
+}

@@ -1,0 +1,38 @@
+.sign {
+  text-align: center;
+}
+
+.sign-up-link {
+  font-size: 10pt;
+  color: rgb(36, 169, 125);
+}
+
+input {
+  width: 25rem;
+  height: 2.5rem;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+  border-color: rgb(165, 163, 163);
+  border-width: 1px;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+button {
+  margin-top: 0.6rem;
+  width: 25rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(36, 169, 125);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}

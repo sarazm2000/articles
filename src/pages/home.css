@@ -1,0 +1,83 @@
+.home {
+}
+h1.title {
+  text-align: center;
+  padding: 5rem;
+  background-color: rgb(36, 169, 125);
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+.article {
+  background-color: white;
+  margin: auto;
+  padding: 2rem 2rem;
+  width: 60%;
+}
+
+.favorite {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  border: solid;
+  border-color: rgb(36, 169, 125);
+  font-size: 11px;
+  float: right;
+  padding: 0.24rem 0.1rem;
+}
+
+.tag {
+  background-color: rgba(128, 128, 128, 0.477);
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  margin: 0.5rem 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.article-title {
+  cursor: pointer;
+}
+.article-body {
+  max-height: 6rem;
+  overflow: hidden;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.date {
+  font-size: 13px;
+  color: gray;
+  padding: 0.5rem 0rem;
+}
+
+.author-img {
+  border-radius: 5rem;
+  height: 4rem;
+}
+
+.author-name {
+  font-weight: bold;
+  color: rgb(36, 169, 125);
+}
+
+.read-this {
+  float: right;
+  background-color: rgb(36, 169, 125);
+  border: solid rgb(36, 169, 125) 3px;
+  border-radius: 1.5rem;
+  font-size: 11px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.read-this:hover {
+  background-color: white;
+  color: rgb(36, 169, 125);
+}
