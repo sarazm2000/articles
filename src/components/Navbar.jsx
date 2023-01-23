@@ -11,6 +11,9 @@ const Navbar = () => {
           <a href="./" className="nav-item">
             Home
           </a>
+          <a className="button" href="./create-article">
+            New Article
+          </a>
         </div>
       ) : (
         <div className="navbar">

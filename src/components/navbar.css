@@ -1,7 +1,7 @@
 .navbar {
   text-align: end;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .nav-item {
@@ -11,4 +11,21 @@
 
 span {
   padding: 0.4rem;
+}
+
+.button {
+  background-color: rgb(36, 169, 125);
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  border: 3px solid rgb(36, 169, 125);
+  color: white;
+  font-weight: bolder;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: rgb(36, 169, 125);
 }

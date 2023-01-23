@@ -1,0 +1,19 @@
+.new-article {
+  margin: auto;
+}
+
+.form {
+  display: grid;
+  margin: 6rem 6rem;
+}
+
+.new {
+  text-align: center;
+}
+
+.new-discription {
+  height: 6rem;
+}
+.new-body {
+  height: 16rem;
+}

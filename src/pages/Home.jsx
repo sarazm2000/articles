@@ -61,21 +61,15 @@ const Home = () => {
                   created at: {item.createdAt}
                 </span>
               </div>
-              <b
-                className="article-title"
-                onClick={() => saveSlugState(item.slug)}
-              >
+              <b className="article-title" onClick={saveSlugState}>
                 <a className="article-title" href={"article"}>
                   {item.title}
                 </a>
               </b>
-              <div className="body" onClick={() => saveSlugState(item.slug)}>
+              <div className="body" onClick={saveSlugState}>
                 <a href={"article"}>{item.description}</a>
               </div>
-              <span
-                className="read-this"
-                onClick={() => saveSlugState(item.slug)}
-              >
+              <span className="read-this" onClick={saveSlugState}>
                 <a href={"article"}>read this</a>
               </span>
               {item.tagList.map((tag) => (

@@ -11,6 +11,7 @@ const Article = () => {
   const [value, setValue] = useState("");
   const slug = useRecoilValue(slugState);
 
+  console.log(slug);
   let tempSlug =
     "If-we-quantify-the-alarm-we-can-get-to-the-FTP-pixel-through-the-online-SSL-interface!-120863";
 
