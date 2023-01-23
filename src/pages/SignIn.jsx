@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Navbar from "../components/Navbar";
 import "./sign.css";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 const SignIn = () => {
   const [data, setData] = useState();
@@ -35,6 +37,10 @@ const SignIn = () => {
       });
   };
 
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem("token")) navigate("/");
+  }, []);
   return (
     <div className="sign-in-page">
       <Navbar />

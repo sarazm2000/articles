@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "./sign.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [data, setData] = useState();
@@ -31,6 +32,12 @@ const SignUp = () => {
         console.log(error);
       });
   };
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem("token")) navigate("/");
+  }, []);
+
   return (
     <div className="sign-up-page">
       <Navbar />
