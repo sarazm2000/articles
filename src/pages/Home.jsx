@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { atom, useRecoilState } from "recoil";
 import "./home.css";
+import axios from "axios";
 
 export const slugState = atom({
   key: "slugAtom",
@@ -11,14 +12,10 @@ export const slugState = atom({
 const Home = () => {
   const [articles, setArticles] = useState([]);
 
-  const fetchData = () => {
-    return fetch("https://api.realworld.io/api/articles/")
-      .then((response) => response.json())
-      .then((data) => setArticles(data.articles));
-  };
-
-  useEffect(() => {
-    fetchData();
+  React.useEffect(() => {
+    axios.get("https://api.realworld.io/api/articles/").then((response) => {
+      setArticles(response.data.articles);
+    });
   }, []);
 
   const [slug, setSlug] = useRecoilState(slugState);
@@ -47,10 +44,7 @@ const Home = () => {
           <b className="article-title" onClick={() => saveSlugState(item.slug)}>
             <a href={"article"}>{item.title}</a>
           </b>
-          <div
-            className="article-body"
-            onClick={() => saveSlugState(item.slug)}
-          >
+          <div className="body" onClick={() => saveSlugState(item.slug)}>
             <a href={"article"}>{item.description}</a>
           </div>
           <span className="read-this" onClick={() => saveSlugState(item.slug)}>

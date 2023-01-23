@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../components/Button";
 import Navbar from "../components/Navbar";
 import "./sign.css";
+import axios from "axios";
 
 const SignIn = () => {
   const [data, setData] = useState();
@@ -14,9 +15,23 @@ const SignIn = () => {
     });
   };
 
-  const handleSubmit = () => {
-    console.log(data);
-    // ... submit to API or something
+  const handleSubmit = (e) => {
+    console.log(data.Email);
+    e.preventDefault();
+    axios
+      .post(`https://api.realworld.io/api/users/login`, {
+        user: {
+          email: data.Email,
+          password: data.password,
+        },
+      })
+      .then(function (res) {
+        console.log(res.data.user.token);
+        localStorage.setItem("token", res.data.user.token);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   return (
@@ -33,7 +48,7 @@ const SignIn = () => {
             name="Email"
             id="Email"
             placeholder="Email"
-            onChange={() => handleChange()}
+            onChange={handleChange}
           />
           <br />
           <input

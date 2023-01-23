@@ -1,4 +1,4 @@
-.article-title {
+.article-article-title {
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
@@ -20,7 +20,7 @@
   float: left;
 }
 
-.date {
+.article-date {
   font-size: 13px;
   font-weight: normal;
   color: white;
@@ -33,23 +33,28 @@
   height: 4rem;
 }
 
-.author-name {
+.article-author-name {
   font-weight: bold;
   color: white;
   font-size: 0.7rem;
 }
 
-.body {
-  padding: 3rem;
+.article-body {
+  margin: 2rem;
+  overflow: visible;
+  display: contents;
+  padding: 4rem 0;
 }
 
-.tag-container {
+.article-tag-container {
   float: right;
-  margin-right: 3rem;
+  margin: 1.3rem 3rem 0 0;
 }
 
 .comments-container {
   padding: 3rem;
+  border-top: solid 1px black;
+  margin-top: 6rem;
 }
 
 .comment-title {
@@ -79,4 +84,10 @@
   text-transform: uppercase;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.article-author-img {
+  border-radius: 5rem;
+  height: 4rem;
 }
