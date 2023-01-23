@@ -1,0 +1,82 @@
+.article-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  background-color: rgb(36, 169, 125);
+  color: white;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  cursor: auto;
+}
+
+.article-body {
+  max-height: 6rem;
+  overflow: hidden;
+  margin: 1rem;
+  cursor: none;
+}
+
+.author {
+  float: left;
+}
+
+.date {
+  font-size: 13px;
+  font-weight: normal;
+  color: white;
+  padding: 0.5rem 0rem;
+  float: inline-start;
+}
+
+.author-img {
+  border-radius: 5rem;
+  height: 4rem;
+}
+
+.author-name {
+  font-weight: bold;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.body {
+  padding: 3rem;
+}
+
+.tag-container {
+  float: right;
+  margin-right: 3rem;
+}
+
+.comments-container {
+  padding: 3rem;
+}
+
+.comment-title {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.comment {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.add-comment {
+  text-align: center;
+  border-radius: 4.7rem;
+}
+
+.comment-button {
+  background-color: rgb(36, 169, 125);
+  text-align: center;
+  width: 10%;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
